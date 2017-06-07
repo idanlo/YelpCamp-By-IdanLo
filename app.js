@@ -1,15 +1,15 @@
-var express        = require("express"),
-    app            = express(),
-    bodyParser     = require("body-parser"),
-    mongoose       = require("mongoose"),
-    passport       = require("passport"),
-    LocalStrategy  = require("passport-local"),
-    Campground     = require("./models/campground"),
-    seedDB         = require("./seeds"),
-    Comment        = require("./models/comment"),
-    User           = require("./models/user"),
-    methodOverride = require("method-override"),
-    flash          = require("connect-flash");
+var express          = require("express"),
+    app              = express(),
+    bodyParser       = require("body-parser"),
+    mongoose         = require("mongoose"),
+    passport         = require("passport"),
+    LocalStrategy    = require("passport-local"),
+    Campground       = require("./models/campground"),
+    seedDB           = require("./seeds"),
+    Comment          = require("./models/comment"),
+    User             = require("./models/user"),
+    methodOverride   = require("method-override"),
+    flash            = require("connect-flash");
 
 //requiring routes  
 var commentRoutes    = require("./routes/comments"),
